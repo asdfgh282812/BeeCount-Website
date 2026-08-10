@@ -86,6 +86,8 @@ const sidebars: SidebarsConfig = {
         'cloud-advanced/debt',
         'cloud-advanced/credit-card-billing',
         'cloud-advanced/card-rewards',
+        'cloud-advanced/swipesmart-recommend',
+        'cloud-advanced/swipesmart-quickadd',
         'cloud-advanced/reconciliation',
         'cloud-advanced/project',
         'cloud-advanced/tx-template',
