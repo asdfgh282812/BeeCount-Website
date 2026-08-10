@@ -76,6 +76,21 @@ const sidebars: SidebarsConfig = {
       ],
     },
     'shared-ledger',
+    {
+      type: 'category',
+      label: 'Cloud 進階功能',
+      items: [
+        'cloud-advanced/recurring',
+        'cloud-advanced/installment',
+        'cloud-advanced/split-refund',
+        'cloud-advanced/debt',
+        'cloud-advanced/credit-card-billing',
+        'cloud-advanced/card-rewards',
+        'cloud-advanced/reconciliation',
+        'cloud-advanced/project',
+        'cloud-advanced/tx-template',
+      ],
+    },
     'mcp/intro',
     {
       type: 'category',
