@@ -14,7 +14,7 @@ keywords: [週期性收支, 自動記帳, 固定支出, 訂閱管理, BeeCount C
 
 登入 Web 端後，右上角**頭像** → 「工具」分組 → **週期性收支**（`/app/recurring-rules`）。
 
-![週期性收支列表](https://photo.pnsgzomf.synology.me/i/2026/08/11/6a79f909c6321.png)
+![週期性收支列表](https://photo.pnsgzomf.synology.me/i/2026/08/11/6a7a0967616e4.png)
 
 ## 建立規則
 
