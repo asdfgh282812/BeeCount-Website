@@ -12,7 +12,7 @@ BeeCount is a **free and open-source** personal finance app for iOS and Android,
 
 - **Simple & Easy** — Minimalist design for quick recording without interrupting your life
 - **Data Security** — All data stored locally, with multiple cloud sync options for full control
-- **Realtime multi-device** 🆕 — [BeeCount Cloud](./cloud-sync/beecount-cloud) self-hosted sync: phone + Web + tablet within seconds
+- **Realtime multi-device** 🆕 — [BeeCount Cloud](./app/cloud-sync/beecount-cloud) self-hosted sync: phone + Web + tablet within seconds
 - **Feature Rich** — Multiple ledgers, accounts, categories, budgets, tags, recurring entries and more
 - **Free & Open Source** — No ads, no subscriptions, no hidden fees, fully transparent code
 

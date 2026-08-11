@@ -38,7 +38,7 @@ keywords: [蜜蜂记账常见问题, 记账FAQ, 记账数据备份, 蜜蜂记账
 
 ### Q: 可以多人共享账本吗？
 
-**支持。** 部署 [BeeCount Cloud](./cloud-sync/beecount-cloud) 自建云端后,Owner 可以一键生成邀请码邀请家人 / 朋友加入同一个账本,所有人实时秒级同步,每条交易自动标记"谁记的 / 谁编辑的"。Owner / Editor 双角色权限分明,iOS / Android / Web 三端都能用。详细使用见 [共享账本](./shared-ledger)。
+**支持。** 部署 [BeeCount Cloud](./app/cloud-sync/beecount-cloud) 自建云端后,Owner 可以一键生成邀请码邀请家人 / 朋友加入同一个账本,所有人实时秒级同步,每条交易自动标记"谁记的 / 谁编辑的"。Owner / Editor 双角色权限分明,iOS / Android / Web 三端都能用。详细使用见 [共享账本](./app/shared-ledger)。
 
 > 仅 BeeCount Cloud 后端支持共享账本(其它同步方案如 iCloud / WebDAV / S3 是单人多设备场景,数据不互通)。
 

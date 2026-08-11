@@ -38,7 +38,7 @@ You can create an "Investment" category and "Investment Account" to record, but 
 
 ### Q: Can multiple people share a ledger?
 
-**Yes.** After self-hosting [BeeCount Cloud](./cloud-sync/beecount-cloud), the Owner can generate an invite code from the App or Web; family / friends enter it to join the same ledger. Everyone syncs in real time and every transaction is tagged with "who wrote it / who last edited it". Owner and Editor roles are enforced; iOS, Android, and Web all work. See [Shared ledgers](./shared-ledger) for full usage.
+**Yes.** After self-hosting [BeeCount Cloud](./app/cloud-sync/beecount-cloud), the Owner can generate an invite code from the App or Web; family / friends enter it to join the same ledger. Everyone syncs in real time and every transaction is tagged with "who wrote it / who last edited it". Owner and Editor roles are enforced; iOS, Android, and Web all work. See [Shared ledgers](./app/shared-ledger) for full usage.
 
 > Only the BeeCount Cloud backend supports shared ledgers (other sync targets like iCloud / WebDAV / S3 are single-user multi-device — data doesn't cross between users).
 
