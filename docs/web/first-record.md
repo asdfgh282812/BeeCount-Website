@@ -32,7 +32,7 @@ keywords: [蜜蜂記帳 Web 新手教學, BeeCount Web 記帳入門, 網頁版�
  除了單一帳戶外，也可以建立主帳戶，並拉其它單個帳戶作為子帳戶，作為子帳戶不能有單獨的額度、結帳日與繳費日，需與主帳戶一致
 
 
-![主帳戶設定](/img/web/main_bank.png.png)
+![主帳戶設定](/img/web/main_bank.png)
 
 ## 新增/修改分類
 
