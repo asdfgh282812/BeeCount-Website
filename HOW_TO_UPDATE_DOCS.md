@@ -12,7 +12,9 @@
 `docs/` 底下分三塊：
 
 - **`docs/app/`** —— App（手機端）操作手冊，2025-08 整理過的統一入口。原本散在 `docs/account/`、`docs/record/`、`docs/cloud-advanced/` 等各自獨立分類資料夾的內容，現在全部收在 `docs/app/` 底下，子資料夾結構不變（`docs/app/account/`、`docs/app/cloud-advanced/`…）。大部分功能文件最後都有一段「Web 端」小節——同一功能 App 跟 Web 怎麼操作寫在同一篇裡，不重複開新檔。
-- **`docs/web/`** —— **只有 Web 端才有**、App 完全沒有對應介面的功能，例如命令面板（⌘K）、管理員功能（使用者管理／健康檢查／線上裝置）、自動備份。這類內容才獨立開檔放這裡。
+- **`docs/web/`** —— **只有 Web 端才有**、App 完全沒有對應介面的功能，例如新手入門（`first-record.md`）、命令面板（⌘K）、管理員功能（使用者管理／健康檢查／線上裝置）、自動備份，以及 `docs/web/cloud-advanced/` 底下一整組「Cloud 進階功能」（週期性收支／分期付款／拆帳退款／借還款／信用卡帳單試算／紅利回饋／SwipeSmart／對帳／專案／範本——這些功能本身就是 BeeCount Cloud 服務端獨有，純 App 本機記帳沒有入口，所以整組收在 Web 底下而不是 `docs/app/`）。這類內容才獨立開檔放這裡。
+- `docs/web/first-record.md` 是特意寫給「完全沒用過蜜蜂記帳」的 Web 讀者看的新手教學（記帳弹窗每個欄位是什麼、怎麼記第一筆），跟 `docs/app/record/basic.md` 裡簡短的「Web 端記帳」小節不是同一回事——後者是給已經看過 App 教學的讀者看差異用的，寫新內容時記得分清楚該補在哪一篇，不要假設 Web 讀者一定看過 App 那邊的文件。
+- `docs/web/cloud-advanced/` 目前刻意維持**不翻譯**（跟原本 `docs/app/cloud-advanced/` 時期一樣）。這代表**其他已翻譯的頁面（英文版）不能連結過去**，不然英文站 build 會失敗——真要連，遇到這種情況先跟提出需求的人確認「要花時間整組翻譯」還是「英文版先純文字帶過、不連結」，不要自己選一邊悶頭做。
 - 頂層零散檔案（`intro.md`、`faq.md`、`contributing.md`、`changelog.md`）跟 `docs/mcp/`：跨主題、不屬於特定分類，維持在頂層不動。
 
 **改文件內容前先想一下這篇該歸哪裡**：如果是「App 怎麼操作＋Web 端怎麼操作」都要講，寫進 `docs/app/` 對應功能的文件、開一段「## Web 端」小節；如果 App 完全沒有這個功能、純粹是 Web/管理端獨有，才開新檔放 `docs/web/`。

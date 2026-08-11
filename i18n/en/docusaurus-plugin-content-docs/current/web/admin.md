@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 description: BeeCount Cloud admin features — platform user management, server health check, and sitewide online device monitoring.
 keywords: [BeeCount Cloud admin, expense tracker user management, server health check]
 ---

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 description: 蜜蜂记账 Web 版命令面板与键盘快捷键——⌘K / Ctrl+K 呼出、快捷操作、页面跳转与交易搜索。
 keywords: [蜜蜂记账命令面板, BeeCount 快捷键, Ctrl+K 记账]
 ---

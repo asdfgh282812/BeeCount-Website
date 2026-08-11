@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 description: 蜜蜂记账 BeeCount Cloud 自动备份——基于 rclone 把数据库定时备份到 S3、WebDAV、Google Drive 等远端存储。
 keywords: [BeeCount Cloud 备份, 蜜蜂记账数据备份, rclone 记账备份]
 ---

@@ -48,11 +48,12 @@ The system automatically updates both account balances.
 
 ## Web Recording
 
-After logging in to [BeeCount Cloud](../cloud-sync/beecount-cloud.md) on the web, desktop entry is faster:
+After logging in to [BeeCount Cloud](../cloud-sync/beecount-cloud.md) on the web, desktop entry is faster. There's no standalone "+" button on web — everything goes through the command palette:
 
-- **+ New transaction button** — top-right of the transactions page opens a dialog
-- **⌘K / Ctrl+K command palette** — works on any page; type amount or note, pick "New transaction"
+- **⌘K / Ctrl+K command palette** — works on any page; the first item, "New transaction", opens the recording dialog on Enter (shortcut `N`)
 - **Bulk operations** — list view supports multi-select delete / export CSV (see [Transactions](../features/record.md))
 - **Desktop keyboard flow** — number pad, Tab to switch fields, Enter to save
+
+The dialog has the same fields as mobile: ledger, type (expense/income/transfer), amount, time, category, account, tags, note, plus two extra toggles ("exclude from totals", "exclude from budget"). For a full walkthrough with screenshots, see [Web: Your First Transaction](../../web/first-record.md).
 
 Transactions created on web sync to mobile within seconds via cloud, and vice versa.

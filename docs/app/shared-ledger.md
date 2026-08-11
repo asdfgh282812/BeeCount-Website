@@ -105,4 +105,4 @@ title: 共享账本
 ## 相关文档
 
 - [BeeCount Cloud 部署](./cloud-sync/beecount-cloud) — 共享账本依赖的同步后端
-- [常见问题](./faq) — Q: 可以多人共享账本吗?
+- [常见问题](../faq) — Q: 可以多人共享账本吗?

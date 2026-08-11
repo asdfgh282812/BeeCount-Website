@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 description: 蜜蜂记账 BeeCount Cloud 管理员功能——平台使用者管理、服务器健康检查、全站在线设备监控。
 keywords: [BeeCount Cloud 管理员, 蜜蜂记账使用者管理, 记账服务器健康检查]
 ---

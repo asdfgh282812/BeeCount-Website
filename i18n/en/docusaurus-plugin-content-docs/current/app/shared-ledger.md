@@ -105,4 +105,4 @@ Per-member income / expense / count by scope (this month / this year / all time)
 ## Related docs
 
 - [BeeCount Cloud deployment](./cloud-sync/beecount-cloud) — the sync backend shared ledgers depend on
-- [FAQ](./faq) — "Can multiple people share a ledger?"
+- [FAQ](../faq) — "Can multiple people share a ledger?"

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 description: BeeCount Web command palette and keyboard shortcuts — open with ⌘K / Ctrl+K, run quick actions, jump between pages, and search transactions.
 keywords: [BeeCount command palette, expense tracker keyboard shortcuts, Ctrl+K budgeting]
 ---

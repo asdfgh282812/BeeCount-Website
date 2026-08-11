@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 description: BeeCount Cloud automated backups — use rclone to schedule backups of your database to S3, WebDAV, Google Drive, and other remote storage.
 keywords: [BeeCount Cloud backup, expense tracker data backup, rclone budgeting backup]
 ---
