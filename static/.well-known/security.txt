@@ -1,4 +1,4 @@
-Contact: https://github.com/TNT-Likely/BeeCount/issues
+Contact: mailto:siang@felifun.com
 Expires: 2027-12-31T23:59:59.000Z
-Preferred-Languages: zh-CN, en
-Canonical: https://count.beejz.com/.well-known/security.txt
+Preferred-Languages: zh-TW, en
+Canonical: https://beecount-manual.pages.dev/.well-known/security.txt

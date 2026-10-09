@@ -3,30 +3,32 @@ import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: '蜜蜂记账',
-  tagline: '简洁、安全、可控的个人记账工具',
+  title: '蜜蜂記帳使用手冊',
+  tagline: '一步一步學會記帳、管卡、看報表',
   favicon: 'img/favicon.ico',
 
-  url: 'https://count.beejz.com',
+  url: 'https://beecount-manual.pages.dev',
   baseUrl: '/',
 
-  organizationName: 'TNT-Likely',
-  projectName: 'BeeCount',
+  organizationName: 'asdfgh282812',
+  projectName: 'BeeCount-Website',
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+      // 圖片檔不存在時讓建置失敗，避免上線後出現破圖
+      onBrokenMarkdownImages: 'throw',
+    },
+  },
 
   i18n: {
-    defaultLocale: 'zh-Hans',
-    locales: ['zh-Hans', 'en'],
+    defaultLocale: 'zh-Hant',
+    locales: ['zh-Hant'],
     localeConfigs: {
-      'zh-Hans': {
-        label: '简体中文',
-        htmlLang: 'zh-Hans',
-      },
-      en: {
-        label: 'English',
-        htmlLang: 'en',
+      'zh-Hant': {
+        label: '繁體中文',
+        htmlLang: 'zh-TW',
       },
     },
   },
@@ -37,7 +39,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          editUrl: 'https://github.com/TNT-Likely/BeeCount-Website/tree/main/',
+          editUrl: 'https://github.com/asdfgh282812/BeeCount-Website/tree/main/',
         },
         blog: false,
         theme: {
@@ -48,14 +50,14 @@ const config: Config = {
   ],
 
   plugins: [
-    // App 内嵌(embed)模式:App 的「使用帮助」WebView 打开文档站时带
-    // ?embed=1&theme=dark|light&primary=RRGGBB。内联脚本必须在 Docusaurus
-    // 启动前执行(preBody),否则暗黑主题首屏闪白。
-    // - embed 标记存 sessionStorage:query 只在首次加载存在,SPA 内部导航靠
-    //   <html data-bee-embed> 属性维持(不用 class:hydration 会重写 className),硬刷新/直链靠 sessionStorage 还原
-    // - theme 写 localStorage['theme'](Docusaurus colorMode 的存储键)
-    // - primary 设置 --ifm-color-primary 及衍生明暗档(对齐 App 主题色)
-    // 对应隐藏规则见 src/css/custom.css 的 html[data-bee-embed] 段。
+    // App 內嵌(embed)模式:App 的「使用說明」WebView 開啟文件站時帶
+    // ?embed=1&theme=dark|light&primary=RRGGBB。行內腳本必須在 Docusaurus
+    // 啟動前執行(preBody),否則暗黑主題首屏閃白。
+    // - embed 標記存 sessionStorage:query 只在首次載入存在,SPA 內部導航靠
+    //   <html data-bee-embed> 屬性維持(不用 class:hydration 會重寫 className),硬重新整理/直接連結靠 sessionStorage 還原
+    // - theme 寫 localStorage['theme'](Docusaurus colorMode 的儲存鍵)
+    // - primary 設定 --ifm-color-primary 及衍生明暗檔(對齊 App 主題色)
+    // 對應隱藏規則見 src/css/custom.css 的 html[data-bee-embed] 段。
     function beeEmbedPlugin() {
       return {
         name: 'bee-embed-mode',
@@ -110,9 +112,8 @@ if(sp){
   ],
 
   themeConfig: {
-    // og:image 由 src/theme/Root.tsx 根据 locale 动态注入(中英两版)
     navbar: {
-      title: '蜜蜂记账',
+      title: '蜜蜂記帳使用手冊',
       logo: {
         alt: 'BeeCount Logo',
         src: 'img/logo.svg',
@@ -122,106 +123,27 @@ if(sp){
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: '文档',
+          label: '使用手冊',
         },
         {
-          to: '/docs/mcp',
-          label: 'MCP',
+          to: '/docs/changelog',
+          label: '更新紀錄',
           position: 'left',
-        },
-        // {to: '/blog', label: '博客', position: 'left'},
-        {
-          to: '/donate',
-          label: '捐赠',
-          position: 'left',
-        },
-        {
-          type: 'localeDropdown',
-          position: 'right',
-        },
-        {
-          href: 'https://github.com/TNT-Likely/BeeCount',
-          label: 'GitHub',
-          position: 'right',
         },
       ],
     },
     footer: {
       style: 'dark',
-      links: [
-        {
-          title: '社区',
-          items: [
-            {
-              label: 'GitHub',
-              href: 'https://github.com/TNT-Likely/BeeCount',
-            },
-            {
-              label: '小红书 @蜜蜂记账',
-              href: 'https://xhslink.com/m/8K1ekg7EFOq',
-            },
-            {
-              label: '抖音 @蜜蜂记账',
-              href: 'https://v.douyin.com/YG7tUweYYyQ/',
-            },
-          ],
-        },
-        {
-          title: '相关产品',
-          items: [
-            {
-              html: `<a href="https://assets.beejz.com" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: flex-start; gap: 0.75rem; padding: 0.875rem 1rem; background: rgba(255, 154, 60, 0.08); border: 1px solid rgba(255, 154, 60, 0.2); border-radius: 10px; text-decoration: none; margin-top: 0.5rem;">
-                <span style="font-size: 1.75rem; line-height: 1;">💼</span>
-                <span>
-                  <span style="display: block; font-weight: 600; color: #FF9A3C; margin-bottom: 0.25rem;">蜜蜂家当 BeeAssets</span>
-                  <span style="display: block; font-size: 0.8em; color: rgba(255,255,255,0.6); line-height: 1.4;">个人资产管理工具<br/>多账户 · 多币种 · 净值追踪</span>
-                </span>
-              </a>`,
-            },
-            {
-              html: `<a href="https://dns.beejz.com" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: flex-start; gap: 0.75rem; padding: 0.875rem 1rem; background: rgba(248, 201, 28, 0.08); border: 1px solid rgba(248, 201, 28, 0.2); border-radius: 10px; text-decoration: none; margin-top: 0.5rem;">
-                <span style="font-size: 1.75rem; line-height: 1;">🐝</span>
-                <span>
-                  <span style="display: block; font-weight: 600; color: #F8C91C; margin-bottom: 0.25rem;">蜜蜂域名 BeeDNS</span>
-                  <span style="display: block; font-size: 0.8em; color: rgba(255,255,255,0.6); line-height: 1.4;">简洁高效的 DNS 管理工具<br/>支持阿里云 DNS</span>
-                </span>
-              </a>`,
-            },
-            {
-              html: `<a href="https://ziqu.beejz.com" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: flex-start; gap: 0.75rem; padding: 0.875rem 1rem; background: rgba(45, 140, 111, 0.08); border: 1px solid rgba(45, 140, 111, 0.2); border-radius: 10px; text-decoration: none; margin-top: 0.5rem;">
-                <span style="font-size: 1.75rem; line-height: 1;">🀄</span>
-                <span>
-                  <span style="display: block; font-weight: 600; color: #2d8c6f; margin-bottom: 0.25rem;">字趣 Ziqu</span>
-                  <span style="display: block; font-size: 0.8em; color: rgba(255,255,255,0.6); line-height: 1.4;">好玩的中文汉字成语小游戏<br/>成语Wordle · 成语接龙 · 诗词填空</span>
-                </span>
-              </a>`,
-            },
-          ],
-        },
-        {
-          title: '友情链接',
-          items: [
-            {
-              label: '果核剥壳',
-              href: 'https://www.ghxi.com/',
-            },
-            {
-              label: 'B站 @星之墨辰',
-              href: 'https://m.bilibili.com/space/501149848',
-            },
-          ],
-        },
-      ],
-      copyright: `© ${new Date().getFullYear()} 蜜蜂记账 BeeCount`,
+      copyright: `蜜蜂記帳（BeeCount）使用手冊 · 本手冊依客製化版本撰寫`,
     },
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
     colorMode: {
-      defaultMode: 'dark',
+      defaultMode: 'light',
       disableSwitch: false,
-      respectPrefersColorScheme: false,
+      respectPrefersColorScheme: true,
     },
   } satisfies Preset.ThemeConfig,
 };

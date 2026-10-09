@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://count.beejz.com/sitemap.xml
+Sitemap: https://beecount-manual.pages.dev/sitemap.xml

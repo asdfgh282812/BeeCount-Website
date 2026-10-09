@@ -25,7 +25,7 @@ yarn-error.log*
 # Claude Code worktrees & local config
 .claude/
 
-# Python(scripts/build_docs_index.py 的临时缓存)
+# Python 暫存
 __pycache__/
 *.pyc
 *.pyo
