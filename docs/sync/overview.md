@@ -52,6 +52,8 @@ description: 蜜蜂記帳如何用 BeeCount Cloud 讓手機與網頁共用同一
 
 ![App「我的 → 同步」頁：帳號、二次驗證、SwipeSmart、雲端圖片下載，以及本機與雲端各項資料筆數的比對](/img/sync/overview-2.png)
 
+![App 同步頁展開「同步說明」：增量與全量同步、何時會全量覆蓋，以及同步不動的常見原因](/img/sync/overview-3.png)
+
 ### 💻 在 Web 上
 
 Web 直接讀取伺服器上的資料，所以不需要另外同步。想確認伺服器是否正常，可以看頭像選單 → 「健康」，見[裝置與安全](./devices.md)。
