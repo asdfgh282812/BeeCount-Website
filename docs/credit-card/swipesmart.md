@@ -20,6 +20,8 @@ description: 連接 SwipeSmart，記帳時輸入金額與商家就能看到刷�
 
 先到 SwipeSmart 網站建立一把 Personal API Key，完整金鑰只會在建立當下顯示一次，請馬上複製。
 
+![App「SwipeSmart 信用卡推薦」頁：尚未連接時，貼上 Personal API Key 後按連接](/img/credit-card/swipesmart-1.png)
+
 **📱 在 App 上**
 
 1. 點「我的」→「雲服務」，進入 BeeCount Cloud 的同步頁（要先登入）。

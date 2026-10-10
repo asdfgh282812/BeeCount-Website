@@ -102,3 +102,15 @@ html[data-bee-embed] .theme-doc-version-badge,
 html[data-bee-embed] .theme-last-updated {
   display: none !important;
 }
+
+/* 手冊截圖：手機直式圖不要撐滿整欄，置中並加上細框 */
+.theme-doc-markdown img {
+  display: block;
+  max-width: 100%;
+  max-height: 620px;
+  width: auto;
+  height: auto;
+  margin: 1.25rem auto;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 12px;
+}

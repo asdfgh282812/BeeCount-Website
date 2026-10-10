@@ -21,6 +21,16 @@ description: 用分類記錄錢花在哪裡，學會建立一級與二級分類�
 
 **進入分類管理**
 
+![App「我的 → 資料管理」頁：分類管理、分類遷移、標籤管理等入口](/img/prepare/category-1.png)
+
+![App 分類管理頁：以格狀顯示支出分類，並標示各分類的交易筆數](/img/prepare/category-manage.png)
+
+![點有子分類的一級分類後彈出的子分類視窗，最下方是新增與編輯](/img/prepare/category-3.png)
+
+![App 編輯分類頁：名稱、圖示與顏色](/img/prepare/category-2.png)
+
+![App 分類遷移頁：選擇類型、遷出分類與遷入分類，並附上不可復原的提醒](/img/prepare/category-4.png)
+
 1. 點底部的「我的」。
 2. 進入「資料管理」。
 3. 點「分類管理」。
