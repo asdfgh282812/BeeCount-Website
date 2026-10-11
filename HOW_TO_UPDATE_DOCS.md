@@ -148,3 +148,14 @@ git push origin main
 - `sheet.py out.png 圖1 圖2 …`：產生帶 10% 刻度的拼圖，方便目測座標；加 `CUR=1` 看的是目前（已標註）的圖。
 - **重拍某張圖時**：直接用新圖覆蓋 `static/img/...`，並刪掉 `annot/orig/` 裡同名的備份，再改 `specs.txt` 的座標，重跑 `annotate.py` 與 `apply_captions.py`。
 - 新增圖片：先拍圖放進 `static/img/`，在文件裡用 `![說明](/img/…)` 引用，最後在 `specs.txt` 加一行。
+
+### 標註座標怎麼定（避免框歪、切到字）
+
+不要憑眼睛估座標。`annot/` 有文字辨識（Apple Vision）可以量出每行字的位置：
+
+- `ocrbin` / `run_ocr.py`：對 `annot/orig/` 所有乾淨原圖做 OCR，結果存在 `annot/ocr.json`（`ocr.swift` 用 `swiftc -O ocr.swift -o ocrbin` 編譯；新增或重拍圖片後重跑 `python3 run_ocr.py`）。
+- `ocrdump.py <相對路徑>`：列出該圖每行文字的座標（比例），框的邊就依這個決定，要落在文字行之間的空隙，或完整圍住文字行。
+- `grid.py <相對路徑> <輸出.png>`：在原圖上畫 0.1 為單位的座標格線，找圖示、開關這類沒有文字的目標用。
+- `fixspecs.py [--write]`：自動把 specs 裡切過文字的框邊移到不切字的位置（只處理「切到字」，不會判斷框得對不對，仍要目視確認）。
+- `montage.py <out.png> <相對路徑>…`：把標註後的圖並排，方便抽查。
+- `annotate.py` 會自動把編號徽章放在最不蓋字的位置；超寬的網頁截圖（寬度 > 1500px）線寬與徽章按 1500px 計算，避免太粗。
