@@ -31,6 +31,7 @@ description: App 裡仍保留 iCloud、WebDAV、S3、Supabase 等備份服務的
 4. 「雲端協同」裡是 BeeCount Cloud，也就是你平常在用的方式。
 
 ![App「我的 → 雲服務」頁：離線模式、備份同步、雲端協同三個分頁，目前選在雲端協同](/img/sync/overview-1.png)
+*圖中：① 目前使用的雲服務與伺服器　② 離線模式、備份同步、雲端協同三個分頁　③ BeeCount Cloud 卡片　④ 教學與配置*
 
 ## 更適合的備份做法
 

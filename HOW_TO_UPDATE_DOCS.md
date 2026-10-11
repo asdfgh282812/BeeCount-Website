@@ -136,3 +136,15 @@ git push origin main
 | 本機預覽 | `pnpm start` |
 | 正式部署 | `pnpm build` 然後 `wrangler pages deploy build --project-name beecount-manual --branch main` |
 | 推送到自己的 fork | `git add -A && git commit -m "..." && git push origin main` |
+
+
+## 截圖上的圈選、編號與圖說（`annot/` 工具）
+
+手冊的 App／Web 截圖都在圖上加了紅框、編號，圖片下方有 `*圖中：① …*` 的圖說。工具和設定檔放在 repo 外的 `/Users/andy/BeeCount-manual-tools/annot/`：
+
+- `specs.txt`：每張圖一行，`相對路徑 | box x0,y0,x1,y1,編號 | ring cx,cy,r,編號 | arrow … | spot … | zoom … | cap 圖說文字`。座標是 0～1 的比例，所以換解析度也能用。
+- `annotate.py <static/img> specs.txt [過濾字串]`：第一次處理某張圖會把原圖備份到 `annot/orig/`，之後都從備份重畫，可以反覆調整座標。
+- `apply_captions.py <docs> specs.txt`：把 `cap` 寫成圖片下一行的圖說（已有就更新）。
+- `sheet.py out.png 圖1 圖2 …`：產生帶 10% 刻度的拼圖，方便目測座標；加 `CUR=1` 看的是目前（已標註）的圖。
+- **重拍某張圖時**：直接用新圖覆蓋 `static/img/...`，並刪掉 `annot/orig/` 裡同名的備份，再改 `specs.txt` 的座標，重跑 `annotate.py` 與 `apply_captions.py`。
+- 新增圖片：先拍圖放進 `static/img/`，在文件裡用 `![說明](/img/…)` 引用，最後在 `specs.txt` 加一行。

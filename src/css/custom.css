@@ -114,3 +114,15 @@ html[data-bee-embed] .theme-last-updated {
   border: 1px solid var(--ifm-color-emphasis-300);
   border-radius: 12px;
 }
+
+/* 圖片下方的圖說：緊接在圖片後面的 *圖中：…* */
+.theme-doc-markdown p > img + em {
+  display: block;
+  margin: -0.75rem auto 1.25rem;
+  max-width: 34rem;
+  text-align: center;
+  font-style: normal;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--ifm-color-emphasis-700);
+}
