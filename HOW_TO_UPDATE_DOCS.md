@@ -81,12 +81,19 @@ description: 一句話摘要
 
 - 歡迎流程（語言、伺服器位址、SSO 登入、授權金鑰、幣種、分類模式）：要登出或全新安裝才拍得到。
 - 拆帳、退款、欠款表單、搜尋結果、Android 專屬畫面（安裝、截圖自動記帳）。
-- SwipeSmart 已連接狀態與卡片對照（需要真的 SwipeSmart 金鑰）、AI 聊天與語音（需要真的 AI 服務商金鑰）。
+- SwipeSmart 已連接狀態與卡片對照（需要真的 SwipeSmart 金鑰）。
+- AI 聊天、語音、拍照記帳已用「假 AI 服務商」拍好（見下一節），不需要真的金鑰；還沒拍的是「待確認帳戶／待確認專案」卡片與剪貼簿圖片選單。
 - 二次驗證、帳戶資訊分頁、年度回顧提醒卡（要模擬 1/1 之後的日期）。
 
 補圖時：照 `shots/*.md` 拍好、放進 `static/img/<章節>/`，再把圖的 Markdown 行加進頁面。可以用 `/Users/andy/BeeCount-manual-tools/wire/addimg.py`（在指定標題後的第一段後插入圖片，格式見檔頭）與 `moveimg.py`（把某張圖移到某段後面）。
 
+### 假 AI 服務商（拍 AI 畫面用）
+
+`/Users/andy/BeeCount-manual-tools/mockai/server.py` 是只在本機 127.0.0.1:8090 監聽的 OpenAI 相容假服務商：`cd mockai && python3 server.py`。App 的「我的 → 智慧記帳 → AI 小助手 → 服務商管理」新增一個 OpenAI 體系服務商，Base URL 填 `http://localhost:8090/v1`、API Key 隨便填、三個模型隨便填，再到「能力綁定」三項都選它即可（Web 的 ⌘K 記帳走 Cloud，同樣會打到這個服務商）。查帳的回答數字取自 App 傳來的真實查詢結果，記帳／語音／圖片辨識則是依輸入文字回固定的帳單 JSON；`mock.log` 記每個請求。拍完請把能力綁定改回原本的服務商並刪掉這個服務商。拍照／相簿測試用的虛構收據在 `mockai/media/receipt.jpg`（`xcrun simctl addmedia <udid> receipt.jpg`）。
+
 ### 截圖前的注意
+
+- 3.9.0 截圖用另一支模擬器「BeeCount Demo 390」（UDID 在 `sim/udid_demo390.txt`，截圖腳本 `sim/snapd.sh`），裝的是 App main 分支最新建置，登入示範帳號；示範資料庫已升到 Cloud 最新 migration。這一批圖**沒有**加圈選編號與圖說（`annot/` 工具未處理），圖說是手寫的純文字。
 
 - 手機直式圖在網站上由 `custom.css` 限制高度（最高 620px）並置中加框，原圖直接放 1206x2622 即可，不用自己縮。
 - 模擬器操作座標：用 control 工具的完整截圖時，座標 × 0.437 = 裝置點；用小圖估座標很容易偏，點不到時先拍完整截圖再算。輸入中文要走剪貼簿，見 `sim/README.md` 的「補充」。
