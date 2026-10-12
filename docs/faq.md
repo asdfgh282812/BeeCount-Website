@@ -51,9 +51,9 @@ description: 登入與授權、同步、信用卡、外幣、股票、AI 等最�
 
 App 在「我的 → 自動化 → 週期記帳」，分期付款在進階設定的「分期」頁籤。Web 的入口與差異寫在[週期性收支](./record/recurring.md)與[分期付款](./record/installment.md)。
 
-### 交易範本為什麼 App 找不到？
+### 交易範本在哪裡？
 
-交易範本目前只有 Web 版有，見[交易範本](./record/template.md)。
+App 與 Web 都有。App 在記帳頁右上角點 ☆ 存成範本，之後點「名稱」欄就能套用；管理在「我的 → 交易範本」。Web 在右上角頭像 →「工具」→「交易範本」。見[交易範本](./record/template.md)。
 
 ## 信用卡
 
