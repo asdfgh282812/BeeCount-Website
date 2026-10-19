@@ -3,11 +3,11 @@ import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: '蜜蜂記帳使用手冊',
+  title: '帳好嗎使用手冊',
   tagline: '一步一步學會記帳、管卡、看報表',
   favicon: 'img/favicon.ico',
 
-  url: 'https://beecount-manual.pages.dev',
+  url: 'https://tallycheck-manual.pages.dev',
   baseUrl: '/',
 
   organizationName: 'asdfgh282812',
@@ -113,9 +113,9 @@ if(sp){
 
   themeConfig: {
     navbar: {
-      title: '蜜蜂記帳使用手冊',
+      title: '帳好嗎使用手冊',
       logo: {
-        alt: 'BeeCount Logo',
+        alt: '帳好嗎 TallyCheck 標誌',
         src: 'img/logo.svg',
       },
       items: [
@@ -134,7 +134,7 @@ if(sp){
     },
     footer: {
       style: 'dark',
-      copyright: `蜜蜂記帳（BeeCount）使用手冊 · 本手冊依客製化版本撰寫`,
+      copyright: `帳好嗎 TallyCheck 使用手冊 · 本手冊對應 App 4.0.0`,
     },
     prism: {
       theme: prismThemes.github,

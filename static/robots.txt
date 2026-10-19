@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://beecount-manual.pages.dev/sitemap.xml
+Sitemap: https://tallycheck-manual.pages.dev/sitemap.xml

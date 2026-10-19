@@ -33,8 +33,8 @@ export default function Root({children}: {children: React.ReactNode}): JSX.Eleme
     <>
       <Head>
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="蜜蜂記帳使用手冊" />
-        <meta name="keywords" content="蜜蜂記帳, BeeCount, 記帳, 信用卡, 股票, 預算, 使用手冊" />
+        <meta property="og:site_name" content="帳好嗎使用手冊" />
+        <meta name="keywords" content="帳好嗎, TallyCheck, 記帳, 信用卡, 股票, 預算, 農場, 使用手冊" />
       </Head>
       {children}
     </>

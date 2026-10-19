@@ -1,7 +1,7 @@
 {
   "name": "beecount-website",
   "version": "1.0.0",
-  "description": "蜜蜂记账官网与文档",
+  "description": "帳好嗎 TallyCheck 使用手冊",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
@@ -17,7 +17,7 @@
   },
   "keywords": [
     "beecount",
-    "记账",
+    "記帳",
     "flutter"
   ],
   "author": "TNT-Likely",

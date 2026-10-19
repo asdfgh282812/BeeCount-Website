@@ -1,29 +1,29 @@
 /**
- * 蜜蜂記帳使用手冊 自訂樣式
+ * 帳好嗎使用手冊 自訂樣式
  */
 
 :root {
-  /* 亮色模式用深琥珀色，確保連結文字對比足夠；蜜蜂黃 #F8C91C 留給深色模式 */
-  --ifm-color-primary: #a87400;
-  --ifm-color-primary-dark: #946600;
-  --ifm-color-primary-darker: #8a5f00;
-  --ifm-color-primary-darkest: #714e00;
-  --ifm-color-primary-light: #bc8300;
-  --ifm-color-primary-lighter: #c68a00;
-  --ifm-color-primary-lightest: #e0a000;
+  /* 品牌色「新芽綠」#2E9E66；亮色模式用深芽綠 #23895A，確保連結文字對比足夠 */
+  --ifm-color-primary: #23895a;
+  --ifm-color-primary-dark: #207b51;
+  --ifm-color-primary-darker: #1e744d;
+  --ifm-color-primary-darkest: #186040;
+  --ifm-color-primary-light: #2a9763;
+  --ifm-color-primary-lighter: #2e9e66;
+  --ifm-color-primary-lightest: #3bb577;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
 [data-theme='dark'] {
-  /* BeeCount 蜜蜂黄 #F8C91C */
-  --ifm-color-primary: #F8C91C;
-  --ifm-color-primary-dark: #e5b80d;
-  --ifm-color-primary-darker: #d9ae0c;
-  --ifm-color-primary-darkest: #b28f0a;
-  --ifm-color-primary-light: #f9d039;
-  --ifm-color-primary-lighter: #f9d44a;
-  --ifm-color-primary-lightest: #fbe07a;
+  /* 暗色模式的新芽綠 #4CC788 */
+  --ifm-color-primary: #4cc788;
+  --ifm-color-primary-dark: #36bf79;
+  --ifm-color-primary-darker: #32b472;
+  --ifm-color-primary-darkest: #299560;
+  --ifm-color-primary-light: #62cf97;
+  --ifm-color-primary-lighter: #72d4a1;
+  --ifm-color-primary-lightest: #99e0bb;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
