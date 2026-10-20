@@ -78,7 +78,7 @@ Web 版怎麼登入與使用，見[Web 版](./sync/web.md)。
 | 分析 | 統計報表、日曆、比較報表、年度回顧 | [統計報表](./analysis/statistics.md) |
 | 對帳 | 拿銀行帳單核對、調整餘額 | [對帳模式](./reconciliation/mode.md) |
 | 同步與帳號 | 雲同步、授權金鑰、Web 版、共享帳本、裝置與安全 | [雲同步與離線](./sync/overview.md) |
-| 其他設定 | 外觀、匯入匯出、通知、資料清理、MCP | [外觀](./more/appearance.md) |
+| 其他設定 | 外觀、匯入匯出、通知、[回饋與評價](./more/feedback.md)、資料清理、MCP | [外觀](./more/appearance.md) |
 | 農場 | 首頁的種菜遊戲：入口、玩法、記帳怎麼換好幣 | [農場總覽](./farm/overview.md) |
 
 找不到答案時，可以到[常見問題](./faq.md)看看，或到[更新紀錄](./changelog.md)確認你的版本有沒有這個功能。
