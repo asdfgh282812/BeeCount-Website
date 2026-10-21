@@ -5,7 +5,7 @@ title: MCP 與個人 API Key 🔖
 description: 建立個人 API Key，讓 Claude、Cursor 等 AI 工具用聊天的方式查詢或記錄你的帳本。
 ---
 
-想直接對 AI 說「上個月餐費花了多少？」或「幫我記一筆：剛剛在便利店買水 35 元」，而不用打開 App？帳好嗎支援 MCP（Model Context Protocol）：你在 Web 建立一把「個人 API Key」，貼到 Claude Desktop、Cursor 等 AI 工具裡，這些工具就能代替你查詢帳本，甚至新增交易。
+想直接對 AI 說「上個月餐費花了多少？」或「幫我記一筆：剛剛在便利店買水 35 元」，而不用打開 App？**帳好嗎**支援 MCP（Model Context Protocol）：你在 Web 建立一把「個人 API Key」，貼到 Claude Desktop、Cursor 等 AI 工具裡，這些工具就能代替你查詢帳本，甚至新增交易。
 
 > 💻 Web（建立 Key）　進階功能 🔖　需要一點電腦操作的基礎
 
@@ -112,7 +112,7 @@ AI 透過 MCP 新增的交易會自動加上「MCP」標籤，方便和你自己
 | `delete_transaction` | 刪除交易（需要二次確認） |
 | `create_category` | 新增分類 |
 | `update_budget` | 修改預算金額（同上，只對舊版的帳本總預算資料有作用） |
-| `parse_and_create_from_text` | 用帳好嗎自己的 AI 解析一段文字並記帳 |
+| `parse_and_create_from_text` | 用**帳好嗎**自己的 AI 解析一段文字並記帳 |
 
 ## 注意事項／小提醒
 
