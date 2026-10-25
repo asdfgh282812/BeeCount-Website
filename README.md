@@ -1,6 +1,6 @@
 # 帳好嗎使用手冊
 
-這是「帳好嗎（TallyCheck）4.0.0 客製化版本」的使用手冊網站，使用 [Docusaurus](https://docusaurus.io/) 建置，內容全部為繁體中文（台灣用語）。
+這是「帳好嗎（TallyCheck）」的使用手冊網站，使用 [Docusaurus](https://docusaurus.io/) 建置，內容全部為繁體中文（台灣用語）。
 
 - 正式網址：<https://tallycheck-manual.pages.dev>
 - 手冊內容在 `docs/`，截圖在 `static/img/`

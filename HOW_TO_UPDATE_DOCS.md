@@ -121,7 +121,7 @@ git push origin main
 
 ## 六、還沒處理、需要你決定的事
 
-1. **App 與 Cloud 裡的使用說明連結仍指向上游網站 `count.beejz.com`**：App 的 `lib/utils/website_urls.dart`（`baseUrl`）、WebView 網域白名單 `lib/pages/settings/help_center_page.dart` 與 `privacy_policy_page.dart`（用 `endsWith('beejz.com')` 判斷），以及 Cloud 的 `cmdk-ai/AskDialog.tsx`、`ParseTxDialog.tsx`。要讓 App 開到這本新手冊，這幾處要改成 `tallycheck-manual.pages.dev`，白名單也要放行。英文語系會加 `/en` 前綴，新站沒有英文版，也要一併拿掉，否則英文使用者會 404。
+1. **主要使用說明入口已改用新手冊**：App 的 `lib/utils/website_urls.dart` 以 `manualBaseUrl` 組成 `docs()`／`docsEmbed()`，不加 `/en`，`help_center_page.dart` 也已放行手冊網域；Web 的 `AboutDialog.tsx` 使用新手冊的說明與更新紀錄連結。App 的官網與部分 FAQ、更新紀錄、雲同步輔助方法仍使用上游 `baseUrl`；後續若調整這些入口，須逐一確認呼叫位置，不能再把「所有使用說明都仍指向上游」當成現況。
 2. **隱私權政策需要你確認**：聯絡方式、帳號刪除方式、AI 金鑰是否加密儲存，以及營運者身分的措辭。目前聯絡窗口寫成「請聯絡提供你帳號的服務營運者」。
 3. **想要 git push 自動部署**：到 Cloudflare Dashboard 把 `tallycheck-manual` 改成 Git 整合（需要在網頁上做一次 GitHub App 授權）。
 
@@ -144,4 +144,4 @@ git push origin main
 
 ### 本次截圖驗收補記
 
-- App AI 記帳卡片的金額符號目前固定為 `¥`（`lib/widgets/ai/bill_card_widget.dart`），與示範帳本 TWD 不一致。手冊保留實際畫面；須由 App 專案另行修正後重拍，這次未修改 App 原始碼。
+- 4.1.0 的 App AI 記帳卡片已依實際交易／帳本幣別顯示金額（`lib/widgets/ai/bill_card_widget.dart`），不再固定為 `¥`。既有截圖若仍顯示舊符號，屬歷史畫面，後續重拍須以當前版本為準。2026-10-25 本次只更新文字，未重拍圖片。
