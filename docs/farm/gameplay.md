@@ -113,6 +113,8 @@ description: 從點空田播種，到澆水、除草、除蟲、收成與清除�
 
 ## 相關頁面
 
+- [畜牧：蓋農社、餵食與領取產物](./livestock.md)
+
 - [農場總覽](./overview.md)
 - [記帳怎麼影響農場](./bookkeeping.md)
 - [賣出、倉庫與大頭菜](./market.md)

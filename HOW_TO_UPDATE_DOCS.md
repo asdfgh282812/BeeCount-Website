@@ -145,3 +145,19 @@ git push origin main
 ### 本次截圖驗收補記
 
 - 4.1.0 的 App AI 記帳卡片已依實際交易／帳本幣別顯示金額（`lib/widgets/ai/bill_card_widget.dart`），不再固定為 `¥`。既有截圖若仍顯示舊符號，屬歷史畫面，後續重拍須以當前版本為準。2026-10-25 本次只更新文字，未重拍圖片。
+
+### 2026-10-27：AI 對話保存與進階記帳截圖
+
+- 已在本機示範環境更新 AI 對話頁、Web 版頁與 4.1.0 更新紀錄，補充最近 20 個對話串、切換／刪除、跨裝置同步及草稿限制。
+- App：重拍 `record/ai-chat-2.png`；新增 `ai-chat-history.png`、`ai-chat-delete.png`、`ai-chat-restored.png`。
+- Web：重拍 `record/ai-chat-web-1.png`、`sync/web-5.png`；新增 `record/ai-chat-web-history.png`、`ai-chat-web-delete.png`、`ai-advanced-web-split.png`、`ai-advanced-web-recurring.png`。
+- 新圖以虛構帳務與示範對話拍攝，透過目前 App／Web 介面呈現；用來說明操作，並非 AI 辨識準確率測試。腳本在本機 `BeeCount-manual-tools/sim/capture410-*.py` 與 `webshots/chat410*.mjs`。
+- 本次不部署、不 commit。
+
+### 2026-10-29：裝置內建 AI 的說明與圖片
+
+- 更新 AI 記帳、聊天、自動記帳、快速入口、首次登入引導、FAQ、導覽、更新紀錄與隱私權政策，區分本機辨識、第三方 AI 與一般 Cloud 同步。
+- 共 10 張新版圖片：替換 `record/ai-4.png`、`preface/install-login-6.png`；新增本機策略選單、僅本機、本機優先、未支援狀態、本機聊天、本機優先引導，以及 Web 管理頁與展開的策略選單。
+- App 圖片由正式 Flutter 元件與隔離示範狀態渲染，沒有 OS 狀態列，不是裝置端截圖或模型準確率驗證。來源在 `sim/ondevice410/capture_test.dart`；重拍時暫放 App 的 `test/` 下執行，完成後移除臨時檔。
+- Web 圖片在瀏覽器直接呈現正式 `SettingsAiPage` 與示範 profile，未接觸正式帳號。暫存入口來源在 `webshots/ondevice410/`，原產品目錄的臨時入口已清除。
+- 使用虛構資料與無效示範金鑰；本次不部署、不 commit。完整驗證及範圍見 App repo `docs/changes/2026-10-29-on-device-ai-manual.md`。

@@ -130,11 +130,26 @@ if(sp){
           label: '更新紀錄',
           position: 'left',
         },
+        {
+          to: '/pricing',
+          label: '方案與購買',
+          position: 'left',
+        },
       ],
     },
     footer: {
       style: 'dark',
-      copyright: `帳好嗎 TallyCheck 使用手冊 · 本手冊對應 App 4.0.0`,
+      links: [
+        {
+          title: '服務',
+          items: [
+            {label: '使用手冊', to: '/docs/intro'},
+            {label: '方案與購買', to: '/pricing'},
+            {label: '隱私權政策', to: '/privacy'},
+          ],
+        },
+      ],
+      copyright: `帳好嗎 TallyCheck 使用手冊 · 本手冊對應 App 4.1.0`,
     },
     prism: {
       theme: prismThemes.github,
