@@ -72,7 +72,7 @@ Web 的「資料」整合分類、標籤與專案；「報表」可切換和 App
 |---|---|---|
 | 前言 | 安裝、登入、首次登入引導、手冊約定、功能導覽 | [安裝與登入](./preface/install-login.md) |
 | 準備 | 帳本、帳戶、分類、標籤、專案、預算、多幣種 | [帳本](./prepare/ledger.md) |
-| 記帳 | 記一筆、轉帳、週期性收支、[訂閱管理](./record/subscriptions.md)、分期、訂金尾款、交易範本、AI 記帳、自動記帳 | [記第一筆帳](./record/first-record.md) |
+| 記帳 | 記一筆、轉帳、週期性收支、[訂閱管理](./record/subscriptions.md)、分期、[存錢桶](./record/savings.md)、訂金尾款、交易範本、AI 記帳、自動記帳 | [記第一筆帳](./record/first-record.md) |
 | 信用卡 | 結帳日、繳款、帳單週期、回饋、刷卡建議 | [設定信用卡](./credit-card/setup.md) |
 | 投資 | 股票持股、定期定額、股利與已實現損益 | [股票持股](./invest/overview.md) |
 | 分析 | 統計報表、日曆、比較報表、年度回顧 | [統計報表](./analysis/statistics.md) |
