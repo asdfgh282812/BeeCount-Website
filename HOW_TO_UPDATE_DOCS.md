@@ -161,3 +161,9 @@ git push origin main
 - App 圖片由正式 Flutter 元件與隔離示範狀態渲染，沒有 OS 狀態列，不是裝置端截圖或模型準確率驗證。來源在 `sim/ondevice410/capture_test.dart`；重拍時暫放 App 的 `test/` 下執行，完成後移除臨時檔。
 - Web 圖片在瀏覽器直接呈現正式 `SettingsAiPage` 與示範 profile，未接觸正式帳號。暫存入口來源在 `webshots/ondevice410/`，原產品目錄的臨時入口已清除。
 - 使用虛構資料與無效示範金鑰；本次不部署、不 commit。完整驗證及範圍見 App repo `docs/changes/2026-10-29-on-device-ai-manual.md`。
+
+### 2026-11-04：分期付款編輯（4.1.4）
+
+- 更新 `record/installment.md`：新增「修改這一期與之後各期」「編輯整個計畫」，調整計畫表格與單筆交易的編輯說明（五選一），移除「建立後不能改」提示；更新紀錄新增 4.1.4。
+- 圖片：重拍 `record/installment-3.png`（計畫卡新增「編輯」按鈕）；新增 `installment-5.png`（「這一期要怎麼修改？」範圍選單）、`installment-6.png`（編輯表單頂部的範圍提示列）。以 iOS 模擬器（iPhone 18 Pro）截圖，示範分期為臨時寫入的虛構資料，拍完已清除。
+- 其餘分期截圖畫面未變，沿用。完整說明見 App repo `docs/changes/2026-11-04-installment-edit.md`。
