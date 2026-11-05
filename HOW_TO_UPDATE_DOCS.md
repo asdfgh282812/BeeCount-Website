@@ -167,3 +167,20 @@ git push origin main
 - 更新 `record/installment.md`：新增「修改這一期與之後各期」「編輯整個計畫」，調整計畫表格與單筆交易的編輯說明（五選一），移除「建立後不能改」提示；更新紀錄新增 4.1.4。
 - 圖片：重拍 `record/installment-3.png`（計畫卡新增「編輯」按鈕）；新增 `installment-5.png`（「這一期要怎麼修改？」範圍選單）、`installment-6.png`（編輯表單頂部的範圍提示列）。以 iOS 模擬器（iPhone 18 Pro）截圖，示範分期為臨時寫入的虛構資料，拍完已清除。
 - 其餘分期截圖畫面未變，沿用。完整說明見 App repo `docs/changes/2026-11-04-installment-edit.md`。
+
+### 2026-11-05：稱號、支持者禮包與農友互助（4.2.0）
+
+- 補入 17 張示範圖片：`more/badges-*` 共 7 張（App 我的頁首、稱號清單、詳情、農場類別，以及 Web 清單、詳情、頭像選單）；`farm/supporter-gift-*` 共 4 張（App／Web 領取前後）；`farm/help-app-*` 共 5 張（拜訪、照顧、選飼料、數量、休耕活力）；`farm/harvest-app-stored.png` 1 張。
+- 圖片分別放入 `more/badges.md`、`farm/bookkeeping.md`、`farm/social.md`、`farm/gameplay.md`，附繁體中文替代文字與圖說。社交頁的拜訪與照顧圖改用新版圖片，舊圖檔保留。
+- 全部使用虛構資料。App 圖片由目前正式 Flutter 頁面、選單及農場素材渲染，沒有 OS 狀態列，**不是實機或模擬器截圖，也不是正式服務連線驗證**。Web 在本機瀏覽器呈現正式 React 頁面、AppHeader 與頭像選單，API 回應採隔離示範資料，未使用真實帳號或日常環境。
+- App 拍攝來源與紀錄在 `/Users/andy/BeeCount-manual-tools/sim/manual420/`（`capture_test.dart`、`harvest_capture_test.dart`、`manifest.json`）；Web 在 `/Users/andy/BeeCount-manual-tools/webshots/manual420/`。圖片尺寸與 SHA-256 記於 manifest；重拍須暫放對應產品目錄，完成後清除臨時入口。
+- 頁首以最終排列為準：頭像在左、問候語與徽章在右，沒有中途加入的目前帳本標籤。補圖完成時未部署、未 commit。
+- 2026-11-05 已依使用者要求建置並部署到正式站 `https://tallycheck-manual.pages.dev`，部署網址為 `https://933e9cb1.tallycheck-manual.pages.dev`。正式站四個更新頁面與 17 張新增圖片已逐一核對，內容雜湊皆與本次 build 一致；驗證紀錄在 `webshots/manual420/deployment-qa.json`。本次未 commit、未 push。
+
+### 2026-11-05：方案額度、好好幣商店與購買說明
+
+- 新增 `sync/limits.md` 與 `farm/hh-shop.md`，整理七種名額的基本額度、單價、永久加購上限、共享帳本算法、既有超額保留與支持者到期後的限制。方案頁、帳本、專案、報表、存錢桶、範本、共享帳本、AI、附件及 FAQ 均補上對應說明。
+- 數字以 Cloud `src/services/entitlements.py` 的 `KINDS`、App `entitlement_gate.dart` 與 Web `reportEntitlements.ts` 為準。舊變更文件中「報表沒有既有用量保留」已過時：migration 0107 與目前兩端程式都使用已記錄的報表數量保留既有用量；新增仍依實際方案上限。
+- 補入 8 張虛構資料示範圖：`farm/hh-shop-*` 5 張（App 商店總覽、名額、確認，以及 Web 名額、確認），`sync/limits-app-*` 3 張（帳本、存錢桶與報表上限提示）。App 以正式 Flutter 元件渲染，不是實機截圖；Web 以正式 React 元件與 AppHeader 在本機隔離瀏覽器呈現，未連接實際帳號或執行扣款。
+- 拍攝來源、數量與單價核對紀錄、圖片尺寸與 SHA-256 在 `/Users/andy/BeeCount-manual-tools/sim/limits420/`；Web 拍攝與手冊顯示檢查在 `webshots/limits420/`。產品目錄的臨時入口已清除。
+- 已建置並部署到正式手冊，部署網址 `https://795ba387.tallycheck-manual.pages.dev`。19 個更新頁面與 8 張新圖片已從正式網址抓回核對，均與 build 內容一致；桌機 1280px、手機 390px 的新章節與方案頁顯示檢查通過。詳見 `webshots/limits420/manual-qa.json` 與 `deployment-qa.json`。本次未 commit、未 push。
