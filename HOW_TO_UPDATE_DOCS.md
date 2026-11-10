@@ -184,3 +184,28 @@ git push origin main
 - 補入 8 張虛構資料示範圖：`farm/hh-shop-*` 5 張（App 商店總覽、名額、確認，以及 Web 名額、確認），`sync/limits-app-*` 3 張（帳本、存錢桶與報表上限提示）。App 以正式 Flutter 元件渲染，不是實機截圖；Web 以正式 React 元件與 AppHeader 在本機隔離瀏覽器呈現，未連接實際帳號或執行扣款。
 - 拍攝來源、數量與單價核對紀錄、圖片尺寸與 SHA-256 在 `/Users/andy/BeeCount-manual-tools/sim/limits420/`；Web 拍攝與手冊顯示檢查在 `webshots/limits420/`。產品目錄的臨時入口已清除。
 - 已建置並部署到正式手冊，部署網址 `https://795ba387.tallycheck-manual.pages.dev`。19 個更新頁面與 8 張新圖片已從正式網址抓回核對，均與 build 內容一致；桌機 1280px、手機 390px 的新章節與方案頁顯示檢查通過。詳見 `webshots/limits420/manual-qa.json` 與 `deployment-qa.json`。本次未 commit、未 push。
+
+
+### 2026-11-10：被偷通知的植物明細
+
+- 僅更新 `farm/settings.md`、`farm/social.md` 與 `more/notifications.md` 的被偷通知相關說明：植物名稱與數量、兩小時內合併及同種加總、App 的農場社交入口，以及 Web 只能閱讀通知的差異。另修正相關段落的「一定有補償」與「直接跳轉」措辭。
+- 替換 `farm/settings-5.png`；新增 `farm/stolen-app-single.png`、`stolen-app-detail.png`、`stolen-web-detail.png`。不重拍無關畫面、不回填歷史通知。
+- 示例內文由目前 Cloud 的 `_stolen_notification_body` 產生，使用虛構作物與數量；App 以目前正式 Flutter 通知元件渲染（1206×2622，沒有 OS 狀態列），不是裝置實拍。Web 以目前正式通知元件在本機隔離瀏覽器開啟清單與詳情後截圖，未連接正式帳號。
+- 重拍來源保存在本機 `BeeCount-manual-tools/sim/theft430/` 與 `webshots/theft430/`；產品目錄的臨時入口拍完即移除。本次不部署、不 commit。
+- 驗證：完整嚴格建置通過（輸出至獨立目錄，避免與其他進行中的建置共用 `build`）；三頁在 390px／1280px 均無水平溢出，四張圖片載入、頁間錨點與 Web 通知開啟／閱讀／關閉操作通過。紀錄在 `webshots/theft430/manual-qa.json`、`qa.json` 與 `images.json`。
+
+### 2026-11-10：共享帳本分帳與訪客連結截圖（4.3.0）
+
+- 新增 `docs/sync/split-ledger.md` 的 14 張圖片與繁體中文替代文字、圖說，涵蓋 App 成員與分帳開關、記帳、多人付款、交易詳情、債務關係、部分還款、群組統計、訪客連結，以及 Web 成員管理、建立連結密碼、訪客解鎖、暱稱與自訂密碼、明細、變更密碼。
+- 示範帳本「週末旅行」、小晴／小宇／小安、`example.com` 帳號、`manual.example` 連結及密碼皆為虛構。共同聚餐 1,200 元，小晴付 800、小宇付 400、三人各分攤 400，未還款時小安應付小晴 400；部分還款畫面填 200，未送出。單一付款人的記帳畫面是切換多人付款前的狀態。
+- App 圖片由目前正式 Flutter 頁面與元件配合隔離的記憶體示範資料渲染，1206 × 2622，沒有 OS 狀態列，**不是實機或模擬器截圖，也不代表正式服務連線驗證**。來源與拍攝紀錄在 `/Users/andy/BeeCount-manual-tools/sim/split430/`，拍攝流程 5 項全部通過。
+- Web 圖片在本機瀏覽器操作正式 React 元件與訪客頁，API 回應使用隔離的虛構資料，未登入實際帳號、未寫入正式或日常服務。已走過解鎖、暱稱與自訂密碼、明細、詳情、統計、結算、變更密碼等畫面；瀏覽器錯誤及未預期 API 請求皆為零。來源與驗證在 `/Users/andy/BeeCount-manual-tools/webshots/split430/`，`manifest.json` 記錄 14 張引用圖片的尺寸與 SHA-256。
+- 網站以一般嚴格建置檢查圖片與連結，再於 390px、1280px 核對所有圖片載入與版面；紀錄在 `manual-qa.json`。產品目錄的臨時拍攝入口用完清除。本次不部署、不 commit、不 push。
+
+### 2026-11-11：發布 4.3.0 手冊與功能覆蓋檢查
+
+- 依使用者要求一併發布目前待提交的手冊文字與圖片：分帳／訪客、智慧加減碼、行事曆活動、種子出售與倉庫分組、大頭菜走勢、買水、被偷通知、瀏覽器通知與拆帳明細費用等。
+- 正常 `pnpm build` 通過；已部署正式站 `https://tallycheck-manual.pages.dev`，本次部署網址為 `https://be541de6.tallycheck-manual.pages.dev`。
+- 已從正式站逐一下載 22 個異動頁面與 42 張新增／更新圖片，SHA-256 全部與本次 build 相符。驗證來源與紀錄：`/Users/andy/BeeCount-manual-tools/webshots/split430/verify-release.py`、`release-qa.json`、`release-build.log`、`release-deploy.log`。
+- 對照 App `2c3dd197` 與 Cloud `44341f3d` 的近期功能，新增根目錄 `MANUAL_TODO.md`，區分尚無教學、只有更新紀錄、文字已寫但缺圖的項目。此清單不進網站；特別記下帳本章舊有的「刪除無法復原」說明需配合 Cloud 回收桶修正。
+- 本次提交與推送範圍為手冊專案，僅推送自己的 `origin/main`。App 與 Cloud 專案未修改、未提交、未部署。
