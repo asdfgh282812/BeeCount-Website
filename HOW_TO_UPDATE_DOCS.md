@@ -209,3 +209,13 @@ git push origin main
 - 已從正式站逐一下載 22 個異動頁面與 42 張新增／更新圖片，SHA-256 全部與本次 build 相符。驗證來源與紀錄：`/Users/andy/BeeCount-manual-tools/webshots/split430/verify-release.py`、`release-qa.json`、`release-build.log`、`release-deploy.log`。
 - 對照 App `2c3dd197` 與 Cloud `44341f3d` 的近期功能，新增根目錄 `MANUAL_TODO.md`，區分尚無教學、只有更新紀錄、文字已寫但缺圖的項目。此清單不進網站；特別記下帳本章舊有的「刪除無法復原」說明需配合 Cloud 回收桶修正。
 - 本次提交與推送範圍為手冊專案，僅推送自己的 `origin/main`。App 與 Cloud 專案未修改、未提交、未部署。
+
+### 2026-11-11：補齊待補清單八項與 16 張示範圖片
+
+- 新增 `farm/wishes.md`，包含發布／預扣、單次完整供應補貼、到期退款、App／Web 入口、庫存空間及重新整理；商店、市場、農場總覽、社交、Web 與更新紀錄已連入。
+- 補寫帳本刪除與回收桶（修正一律無法復原的舊說明）、股票與股利跨幣別交割、排行榜目前佩戴徽章與新版獎勵級距、AI 獨立 400 字備註、不納入總額的淡灰帳戶金額；FAQ 與相關頁面也補上入口。`MANUAL_TODO.md` 八項標示完成，仍保留原始查證來源與範圍。
+- 新增 16 張圖：回收桶／刪除 2、許願 App／Web 4、股票／股利 3、排行榜 1、AI 長備註 1、排除帳戶 1、買水 2、小看門狗 2。名稱、帳本、證券代號 DEMO、價格、交易與庫存皆為虛構；沒有操作正式帳務、實際刪除、購買或呼叫付費 AI。
+- App：目前正式 Flutter 頁面與元件配合隔離示範資料渲染，1206×2622，並非實機或模擬器實拍。來源 `/Users/andy/BeeCount-manual-tools/sim/backlog430/capture_test.dart`，4 組拍攝流程全過；小看門狗使用正式場景、氣泡與控制項，示範費用／時間由隔離資料提供，未實際佈置。
+- Web：本機瀏覽器操作目前正式 React 許願頁、排行榜、股票交易視窗、AI 草稿與帳戶列，API 回應隔離，未使用真實帳號。來源、`qa.json` 與圖片 `manifest.json` 在 `/Users/andy/BeeCount-manual-tools/webshots/backlog430/`，瀏覽器錯誤與未預期 API 請求皆為零。產品目錄的臨時拍攝檔案用完清除。
+- 發布前嚴格建置通過；17 個更新頁面在 390px／1280px 均無水平溢出，16 張新圖載入與尺寸限制、章節連結皆通過，紀錄在 `webshots/backlog430/manual-qa.json`。
+- 已部署正式手冊，本次部署網址 `https://7dd07699.tallycheck-manual.pages.dev`；正式站驗證程式與紀錄位於 `webshots/backlog430/verify-release.py`、`release-qa.json`。發布後再提交並推送自己的 `origin/main`；未處理其他專案同期進行的變更。

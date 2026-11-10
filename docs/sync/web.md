@@ -200,6 +200,7 @@ Safari 不會跳出上面的提示，請按「分享」按鈕，選「加入主�
 
 - [授權金鑰](./license.md)
 - [共享帳本](./shared-ledger.md)
+- [農場許願](../farm/wishes.md)
 - [多人分帳與訪客連結](./split-ledger.md)
 - [裝置與安全](./devices.md)
 - [匯入與匯出](../more/data.md)

@@ -66,7 +66,7 @@ App 和 Web 看到的是同一份資料，在一邊記帳，另一邊幾秒內�
 
 Web 的「資料」整合分類、標籤、專案與[活動](./record/activities.md)；「報表」可切換和 App 共用的統計報表，以及 Web 專有的比較矩陣。登入與操作方式見[Web 版](./sync/web.md)。
 
-4.3.0 的操作說明分成兩個章節：[股票智慧加減碼](./invest/smart-dca.md)與[行事曆活動](./record/activities.md)，都有 App 示範截圖。
+近期新增的操作說明包含[股票智慧加減碼](./invest/smart-dca.md)、[行事曆活動](./record/activities.md)、[多人分帳與訪客](./sync/split-ledger.md)，以及[農場許願](./farm/wishes.md)，均附示範截圖。
 
 ## 章節地圖
 
