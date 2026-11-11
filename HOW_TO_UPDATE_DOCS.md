@@ -219,3 +219,11 @@ git push origin main
 - Web：本機瀏覽器操作目前正式 React 許願頁、排行榜、股票交易視窗、AI 草稿與帳戶列，API 回應隔離，未使用真實帳號。來源、`qa.json` 與圖片 `manifest.json` 在 `/Users/andy/BeeCount-manual-tools/webshots/backlog430/`，瀏覽器錯誤與未預期 API 請求皆為零。產品目錄的臨時拍攝檔案用完清除。
 - 發布前嚴格建置通過；17 個更新頁面在 390px／1280px 均無水平溢出，16 張新圖載入與尺寸限制、章節連結皆通過，紀錄在 `webshots/backlog430/manual-qa.json`。
 - 已部署正式手冊，本次部署網址 `https://7dd07699.tallycheck-manual.pages.dev`；正式站驗證程式與紀錄位於 `webshots/backlog430/verify-release.py`、`release-qa.json`。發布後再提交並推送自己的 `origin/main`；未處理其他專案同期進行的變更。
+
+### 2026-11-11：補齊 4.3.0 更新說明並發布完整手冊
+
+- 對照 App `4c73f863`、Cloud `24ac0965` 的變更紀錄與目前原始碼，將 4.3.0 更新說明整理為四個主題、25 項更新，涵蓋共享分帳、活動、投資、AI 備註、農場、通知、操作改善與安全修正；4.2.2 及更早版本紀錄完整保留。
+- 同步修正稱號頁的 39 枚／七類徽章與新稱號慶祝、股利確認入帳日期、捷徑帳戶檢查與文字記帳限制；網站頁尾版本更新為 App 4.3.0。
+- 完整 `pnpm build` 與差異檢查通過，更新紀錄的 25 個教學連結與錨點均已核對。使用 `wrangler pages deploy build --project-name tallycheck-manual --branch main --commit-dirty=true` 發布整份手冊，包含既有頁面、圖片與靜態資源。
+- 正式網址 `https://tallycheck-manual.pages.dev`；本次部署網址 `https://1f6d5c0a.tallycheck-manual.pages.dev`。已從正式站讀回全部 80 個 HTML 頁面，SHA-256 全部與本次 build 一致；驗證紀錄位於 `/tmp/tallycheck-manual-release-1f6d5c0a.json`。
+- 本次依使用者要求部署並 commit 手冊專案，未修改 App 或 Cloud 專案。
