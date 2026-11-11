@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-sidebar_label: 紅利回饋
+sidebar_label: 紅利回饋 🔖
 title: 紅利回饋 🔖
 description: 為信用卡設定回饋規則（百分比或固定金額、上限、活動期間），記帳時勾選套用，回饋交易會即時連動消費、在入帳日出現，金額還能手動調整。
 ---

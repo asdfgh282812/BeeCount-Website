@@ -1,7 +1,7 @@
 ---
 sidebar_position: 2.5
-sidebar_label: 行事曆活動
-title: 行事曆活動：把消費綁到行程
+sidebar_label: 行事曆活動 🔖
+title: 行事曆活動：把消費綁到行程 🔖
 description: 開啟手機行事曆整合、過濾行程，將新消費或已記帳交易綁到活動，查看每次聚餐、旅行的收支與統計。
 ---
 

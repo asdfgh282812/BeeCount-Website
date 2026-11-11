@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
-sidebar_label: 股票持股
-title: 股票持股
+sidebar_label: 股票持股 🔖
+title: 股票持股 🔖
 description: 在投資理財（證券）帳戶記錄買賣、期初持股，自動算出股數、平均成本、市值與未實現損益。
 ---
 

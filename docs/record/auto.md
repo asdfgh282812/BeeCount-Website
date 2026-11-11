@@ -1,7 +1,7 @@
 ---
 sidebar_position: 14
-sidebar_label: 自動記帳
-title: 自動記帳
+sidebar_label: 自動記帳 🔖
+title: 自動記帳 🔖
 description: 付完款截個圖或分享一下，就讓 AI 在背景幫你記好這筆帳；iOS 用捷徑與分享選單，Android 用截圖監聽與分享。
 ---
 

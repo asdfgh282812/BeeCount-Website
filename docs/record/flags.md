@@ -1,7 +1,7 @@
 ---
 sidebar_position: 4
-sidebar_label: 帳單標記
-title: 帳單標記
+sidebar_label: 帳單標記 🔖
+title: 帳單標記 🔖
 description: 「不計入收支」與「不計入預算」兩個標記，讓特殊的交易照常影響帳戶餘額，但不干擾報表與預算。
 ---
 

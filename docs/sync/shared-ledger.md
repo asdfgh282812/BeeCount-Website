@@ -1,7 +1,7 @@
 ---
 sidebar_position: 4
-sidebar_label: 共享帳本
-title: 共享帳本
+sidebar_label: 共享帳本 🔖
+title: 共享帳本 🔖
 description: 邀請家人或朋友一起記同一本帳：產生邀請碼、加入帳本、管理成員，以及多人分帳與免帳號訪客的使用入口。
 ---
 

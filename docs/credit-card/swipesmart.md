@@ -1,6 +1,6 @@
 ---
 sidebar_position: 5
-sidebar_label: 刷卡建議與一鍵記帳
+sidebar_label: 刷卡建議與一鍵記帳 🔖
 title: 刷卡建議與一鍵記帳 🔖
 description: 連接 SwipeSmart，記帳時輸入金額與商家就能看到刷哪張卡回饋最高，也能從 SwipeSmart 網頁一鍵帶入新增交易，或直接問 AI 助手。
 ---

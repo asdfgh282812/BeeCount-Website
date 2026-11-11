@@ -1,7 +1,7 @@
 ---
 sidebar_position: 7
-sidebar_label: 預算
-title: 預算
+sidebar_label: 預算 🔖
+title: 預算 🔖
 description: 4.0 起預算統一用「專案」管理：每月循環的專案控制日常花費，固定期間的專案管旅行、裝修，並有進度條、每日額度與超標提醒。
 ---
 

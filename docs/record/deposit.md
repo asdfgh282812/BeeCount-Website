@@ -1,7 +1,7 @@
 ---
 sidebar_position: 8.5
-sidebar_label: 訂金尾款追蹤
-title: 訂金尾款追蹤
+sidebar_label: 訂金尾款追蹤 🔖
+title: 訂金尾款追蹤 🔖
 description: 先付訂金、之後才付尾款（訂飯店、訂餐廳、訂做家具）時，記下訂金並追蹤尾款，到期提醒你補上，補上之前不影響統計與帳戶餘額。
 ---
 

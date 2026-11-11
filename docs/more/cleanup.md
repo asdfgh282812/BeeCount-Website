@@ -1,7 +1,7 @@
 ---
 sidebar_position: 4
-sidebar_label: 資料清理
-title: 資料清理
+sidebar_label: 資料清理 🔖
+title: 資料清理 🔖
 description: 檢查並清理這支手機上沒有被任何資料使用的殘留資料，釋放空間。
 ---
 

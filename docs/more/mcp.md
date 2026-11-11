@@ -1,6 +1,6 @@
 ---
 sidebar_position: 5
-sidebar_label: MCP 與個人 API Key
+sidebar_label: MCP 與個人 API Key 🔖
 title: MCP 與個人 API Key 🔖
 description: 建立個人 API Key，讓 Claude、Cursor 等 AI 工具用聊天的方式查詢或記錄你的帳本。
 ---

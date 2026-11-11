@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
-sidebar_label: 對帳模式
-title: 對帳模式
+sidebar_label: 對帳模式 🔖
+title: 對帳模式 🔖
 description: 拿銀行寄來的信用卡帳單，和帳好嗎的記錄一筆一筆核對，找出漏記或多記的消費，沒入帳的消費可以延後到下一期。
 ---
 

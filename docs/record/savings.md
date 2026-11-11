@@ -1,7 +1,7 @@
 ---
 sidebar_position: 8.6
-sidebar_label: 存錢桶
-title: 存錢桶
+sidebar_label: 存錢桶 🔖
+title: 存錢桶 🔖
 description: 為旅行、換手機、預備金這類目標設定金額與期限，一點一點存；可以隨意存，也可以切成每天、每週、每月的格子一格一格存，達標時還有花朵慶祝。
 ---
 

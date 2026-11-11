@@ -1,7 +1,7 @@
 ---
 sidebar_position: 3
-sidebar_label: 比較報表
-title: 比較報表
+sidebar_label: 比較報表 🔖
+title: 比較報表 🔖
 description: 把好幾個月並排成一張表，一眼比較每個類別、專案、帳戶分組每個月花多少。
 ---
 

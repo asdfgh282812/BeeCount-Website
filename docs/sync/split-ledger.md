@@ -1,7 +1,7 @@
 ---
 sidebar_position: 4.5
-sidebar_label: 多人分帳與訪客
-title: 多人分帳與訪客連結
+sidebar_label: 多人分帳與訪客 🔖
+title: 多人分帳與訪客連結 🔖
 description: 在共享帳本記錄誰付款、誰分攤，查看債務關係與還款，並邀請沒有帳號的朋友用附密碼的專屬連結一起記帳。
 ---
 

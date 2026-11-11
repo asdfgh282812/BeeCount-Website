@@ -1,7 +1,7 @@
 ---
 sidebar_position: 6.5
-sidebar_label: 畜牧
-title: 畜牧：蓋農社、餵食與領取產物
+sidebar_label: 畜牧 🔖
+title: 畜牧：蓋農社、餵食與領取產物 🔖
 description: 在雲端農場蓋農社、購買動物，用收成作物餵食，領取副產品、種子與寶箱，再到市場出售。
 ---
 

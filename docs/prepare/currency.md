@@ -1,7 +1,7 @@
 ---
 sidebar_position: 8
-sidebar_label: 多幣種與匯率
-title: 多幣種與匯率
+sidebar_label: 多幣種與匯率 🔖
+title: 多幣種與匯率 🔖
 description: 設定顯示幣種與帳本幣種、建立外幣帳戶、記外幣消費，並在匯率管理頁查看或手動修正匯率。
 ---
 
