@@ -227,3 +227,20 @@ git push origin main
 - 完整 `pnpm build` 與差異檢查通過，更新紀錄的 25 個教學連結與錨點均已核對。使用 `wrangler pages deploy build --project-name tallycheck-manual --branch main --commit-dirty=true` 發布整份手冊，包含既有頁面、圖片與靜態資源。
 - 正式網址 `https://tallycheck-manual.pages.dev`；本次部署網址 `https://1f6d5c0a.tallycheck-manual.pages.dev`。已從正式站讀回全部 80 個 HTML 頁面，SHA-256 全部與本次 build 一致；驗證紀錄位於 `/tmp/tallycheck-manual-release-1f6d5c0a.json`。
 - 本次依使用者要求部署並 commit 手冊專案，未修改 App 或 Cloud 專案。
+
+
+### 2026-11-11：分類與標籤搜尋（4.3.0）
+
+- 更新 `prepare/category.md`、`prepare/tag.md`，補 App／Web 管理入口、部分名稱即時篩選、大小寫、清除、無結果、分類種類限制與子分類直接選取；分類管理搜尋時須先清除才能排序。`record/first-record.md` 與 `record/fields.md` 補記帳入口及連結，`changelog.md` 在 4.3.0 合併記錄功能與搜尋框外觀調整。
+- 新增 `prepare/category-search.png`：沿用本次功能開發時以正式 Flutter `CategorySelector` 與虛構分類渲染的亮色預覽，780 × 480，沒有 OS 狀態列，並非實機或模擬器截圖。原圖為本機 `compact-search-light.png`；未重拍其他既有圖片。
+- 內容依 App `docs/changes/2026-11-11-category-tag-search.md`、`BeeSearchField`、分類與標籤管理頁及 Web 共用元件核對。只更新手冊內容；未部署、未 commit、未 push。
+- 驗證：完整 `pnpm build` 通過，五個使用者文件頁面的搜尋段落與連結已核對，新增圖片與建置產物一致；本機瀏覽器 390px 寬下無水平溢出，示意圖正常載入。
+
+
+### 2026-11-11：發布搜尋與逐筆商家手冊
+
+- 依使用者要求，一併發布本專案目前全部待提交內容：分類／標籤搜尋、較小淡色搜尋框示意圖、記帳教學入口，以及拆帳明細各自商家的操作、清空、舊資料與同步說明；4.3.0 更新紀錄同步更新。
+- 完整建置輸出至 `/tmp/tallycheck-manual-search-release-20261111`，避免與其他建置共用產物。已使用 Wrangler 將整份網站部署到正式專案 `tallycheck-manual` 的既有 `main`，共上傳／沿用 1,211 個資源。
+- 正式網址 `https://tallycheck-manual.pages.dev`；本次部署網址 `https://0da67b27.tallycheck-manual.pages.dev`。正式站全部 80 個 HTML 頁面及新增搜尋框圖片的 SHA-256 均與本次建置一致（81／81）；瀏覽器也已確認搜尋操作段落與新圖片正常載入。
+- 驗證腳本與紀錄：`/tmp/verify_tallycheck_search_release.py`、`/tmp/tallycheck-manual-search-release-0da67b27.json`；建置與部署紀錄為 `/tmp/tallycheck-manual-search-release-build.log`、`/tmp/tallycheck-manual-search-release-deploy.log`。
+- 本次於既有 `main` 提交手冊專案全部修改，未建立分支、未 push；未提交或部署 App／Cloud 專案。
