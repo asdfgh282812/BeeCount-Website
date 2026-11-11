@@ -256,3 +256,11 @@ git push origin main
 - 依使用者明確指示，將上述已驗證的完整建置發布到Cloudflare Pages專案 `tallycheck-manual` 的既有正式分支 `main`；本次上傳87個新資源、沿用1,124個資源。
 - 正式網址 `https://tallycheck-manual.pages.dev`；本次部署網址 `https://ff3f07e5.tallycheck-manual.pages.dev`。正式站全部80個HTML頁面讀回的SHA-256均與此次建置相符，瀏覽器也已確認放大鏡小節、頁面錨點、無水平溢出及既有圖片載入正常。
 - 部署紀錄 `/tmp/tallycheck-manual-magnifier-20261111-deploy.log`；正式站驗證紀錄 `/tmp/tallycheck-manual-magnifier-ff3f07e5-verify.json`。本次只發布手冊網站，未部署App或Cloud服務，未建立Git分支、未commit、未push。
+
+### 2026-11-11：補齊並發布放大鏡操作圖片
+
+- 依使用者指正，補上 `magnifier-shop.png`、`magnifier-use.png`、`magnifier-result.png` 三張780×1688的操作圖片，分別說明商店購買、自己的田地使用按鈕，以及成功查看後的預估收成時間。田地玩法列出三張圖，商店章節共用購買圖。
+- 圖片沿用App正式Flutter頁面／元件與隔離虛構資料的渲染結果，來源為App repo `docs/changes/screenshots/2026-11-11-farm-magnifier/` 的 `shop-light.png`、`plot-before-light.png`、`plot-estimate.png`，重拍入口為 `FARM_CAPTURE_PREVIEWS=1 flutter test test/farm/farm_ui_test.dart --plain-name '放大鏡'`。不是裝置擷取，未包含系統狀態列；圖說已標示來源。依本次截圖要求保留真實介面內容，不遮蔽或改寫畫面數字，正文維持原本概述。
+- 圖片來源與SHA-256記於 `/Users/andy/BeeCount-manual-tools/sim/farm-magnifier430/manifest.json`；本機390px與1280px的三張圖片均正常載入、無水平溢出，手機版預覽記於同目錄的 `manual-mobile.png`。
+- 完整建置至 `/tmp/tallycheck-manual-magnifier-images-20261111` 通過；已部署到正式專案 `tallycheck-manual` 既有 `main`，版本網址 `https://23afcb40.tallycheck-manual.pages.dev`。正式站80個HTML頁面及三張原始圖、三張建置引用圖的SHA-256全部相符（86／86），瀏覽器確認正式教學的三張圖片都能載入。
+- 建置與部署紀錄為 `/tmp/tallycheck-manual-magnifier-images-20261111-build.log`、`/tmp/tallycheck-manual-magnifier-images-20261111-deploy.log`；正式站驗證記錄為上述拍攝目錄的 `release-qa.json`。未修改App產品程式，未建立分支、未commit、未push。
