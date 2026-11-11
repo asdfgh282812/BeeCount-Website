@@ -244,3 +244,15 @@ git push origin main
 - 正式網址 `https://tallycheck-manual.pages.dev`；本次部署網址 `https://0da67b27.tallycheck-manual.pages.dev`。正式站全部 80 個 HTML 頁面及新增搜尋框圖片的 SHA-256 均與本次建置一致（81／81）；瀏覽器也已確認搜尋操作段落與新圖片正常載入。
 - 驗證腳本與紀錄：`/tmp/verify_tallycheck_search_release.py`、`/tmp/tallycheck-manual-search-release-0da67b27.json`；建置與部署紀錄為 `/tmp/tallycheck-manual-search-release-build.log`、`/tmp/tallycheck-manual-search-release-deploy.log`。
 - 本次於既有 `main` 提交手冊專案全部修改，未建立分支、未 push；未提交或部署 App／Cloud 專案。
+
+### 2026-11-11：農場單次放大鏡
+
+- 補入田地玩法的放大鏡操作與使用條件，商店、季節天氣及4.3.0更新紀錄連到同一小節。依App當前文案說明只能看自己的作物、購買取得、成功消耗一把、關窗即清除預估結果，以及缺水先補水、未來條件仍可能改變收成時間。
+- 沿用農場手冊不公開價格、進度門檻數值與計算細節的寫法，不另加含數值的產品截圖。完整實作來源為App repo `docs/changes/2026-11-11-farm-magnifier.md`。
+- 完整建置至獨立目錄 `/tmp/tallycheck-manual-magnifier-20261111` 通過；本機瀏覽器確認更新紀錄可連到放大鏡教學，390px寬度無水平溢出、既有圖片沒有載入錯誤。未部署、未commit、未push。
+
+### 2026-11-11：發布放大鏡說明與更新紀錄
+
+- 依使用者明確指示，將上述已驗證的完整建置發布到Cloudflare Pages專案 `tallycheck-manual` 的既有正式分支 `main`；本次上傳87個新資源、沿用1,124個資源。
+- 正式網址 `https://tallycheck-manual.pages.dev`；本次部署網址 `https://ff3f07e5.tallycheck-manual.pages.dev`。正式站全部80個HTML頁面讀回的SHA-256均與此次建置相符，瀏覽器也已確認放大鏡小節、頁面錨點、無水平溢出及既有圖片載入正常。
+- 部署紀錄 `/tmp/tallycheck-manual-magnifier-20261111-deploy.log`；正式站驗證紀錄 `/tmp/tallycheck-manual-magnifier-ff3f07e5-verify.json`。本次只發布手冊網站，未部署App或Cloud服務，未建立Git分支、未commit、未push。
