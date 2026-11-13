@@ -264,3 +264,9 @@ git push origin main
 - 圖片來源與SHA-256記於 `/Users/andy/BeeCount-manual-tools/sim/farm-magnifier430/manifest.json`；本機390px與1280px的三張圖片均正常載入、無水平溢出，手機版預覽記於同目錄的 `manual-mobile.png`。
 - 完整建置至 `/tmp/tallycheck-manual-magnifier-images-20261111` 通過；已部署到正式專案 `tallycheck-manual` 既有 `main`，版本網址 `https://23afcb40.tallycheck-manual.pages.dev`。正式站80個HTML頁面及三張原始圖、三張建置引用圖的SHA-256全部相符（86／86），瀏覽器確認正式教學的三張圖片都能載入。
 - 建置與部署紀錄為 `/tmp/tallycheck-manual-magnifier-images-20261111-build.log`、`/tmp/tallycheck-manual-magnifier-images-20261111-deploy.log`；正式站驗證記錄為上述拍攝目錄的 `release-qa.json`。未修改App產品程式，未建立分支、未commit、未push。
+
+### 2026-11-14：4.3.1 更新紀錄與三項功能截圖
+
+- 新增 `changelog.md` 的 4.3.1；更新 `record/split-refund.md`（替整組拆帳命名）、`analysis/calendar.md`（選中日期的交易排序）、`record/activities.md`（折疊首頁行程）、`credit-card/payment.md`（群組繳款記住付款帳戶）；頁尾改為對應 App 4.3.1。
+- 新增 8 張圖：`analysis/calendar-sort-1/2.png`、`record/split-refund-name-1/2.png`、`record/activities-collapse-1/2.png`（App，由正式 Flutter 元件配虛構資料渲染，非實機截圖，來源 `BeeCount-manual-tools/sim/manual431/capture_test.dart`，重拍須暫放 App `test/` 下執行後移除）、`analysis/calendar-sort-web-1/2.png`（Web，示範環境 8081 實拍，腳本 `webshots/sort431/capture.mjs`）。
+- 示範資料庫 `demo.db` 已用 `alembic upgrade head` 原地升級（舊版 schema 讓 ledger API 回 500），升級前備份在 scratchpad。本次未部署、未 commit。
