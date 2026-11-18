@@ -149,7 +149,7 @@ if(sp){
           ],
         },
       ],
-      copyright: `帳好嗎 TallyCheck 使用手冊 · 本手冊對應 App 4.3.3`,
+      copyright: `帳好嗎 TallyCheck 使用手冊 · 本手冊對應 App 4.3.4`,
     },
     prism: {
       theme: prismThemes.github,
