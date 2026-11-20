@@ -237,6 +237,6 @@ Web 上在帳戶詳情視窗找「調整餘額」，輸入「目標餘額」後�
 - [資產總覽與淨值](./account-overview.md)
 - [設定信用卡](../credit-card/setup.md)
 - [餘額調整](../reconciliation/adjust.md)
-- [多幣種與匯率](./currency.md)
+- [多幣種與匯率](./currency.md)：外幣帳戶「資訊」分頁的[買入均價](./currency.md#fx-cost)
 - [股票持股](../invest/overview.md)
 - [記第一筆帳](../record/first-record.md)
