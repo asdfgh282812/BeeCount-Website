@@ -270,3 +270,20 @@ git push origin main
 - 新增 `changelog.md` 的 4.3.1；更新 `record/split-refund.md`（替整組拆帳命名）、`analysis/calendar.md`（選中日期的交易排序）、`record/activities.md`（折疊首頁行程）、`credit-card/payment.md`（群組繳款記住付款帳戶）；頁尾改為對應 App 4.3.1。
 - 新增 8 張圖：`analysis/calendar-sort-1/2.png`、`record/split-refund-name-1/2.png`、`record/activities-collapse-1/2.png`（App，由正式 Flutter 元件配虛構資料渲染，非實機截圖，來源 `BeeCount-manual-tools/sim/manual431/capture_test.dart`，重拍須暫放 App `test/` 下執行後移除）、`analysis/calendar-sort-web-1/2.png`（Web，示範環境 8081 實拍，腳本 `webshots/sort431/capture.mjs`）。
 - 示範資料庫 `demo.db` 已用 `alembic upgrade head` 原地升級（舊版 schema 讓 ledger API 回 500），升級前備份在 scratchpad。本次未部署、未 commit。
+
+### 2026-11-26：同步 4.3.5 功能手冊文字與 14 張示範截圖
+
+- 對照 App（`33571c2f`～`ca76da0f`）與 Cloud（`08340552`～`cc61c41e`）提交、`docs/changes/` 與 `app_zh_TW.arb` 更新手冊文字與連結：
+  - AI 記帳／AI 聊天／安裝與登入／方案／隱私／FAQ／Web 版／好好幣商店：補內建官方免費 AI（每日 80% 保護熔斷、隔日 08:00 恢復）、支持者旗艦分級、點數用完自動改用免費 AI 與用完提示、升級強制體驗頁（含熔斷「明日再體驗」與連續失敗「稍後再說」）、思考模式／深度思考、即時串流與 180 秒逾時／停止生成／重試／背景生成、AI 對話頁快速切換文字服務商、AI 在線／離線狀態圖示與吉祥物「好好」頭像，以及語音 16kHz 單聲道 WAV。同步將 App「共享 AI 點數／內建免費 AI 服務」卡片入口更新為「我的 → 智慧記帳 → AI 服務管理」。
+  - 首頁日曆與行事曆活動：補「首頁智慧卡片」（信用卡繳款、本期報表、當天行程、當天的專案、近期常用專案、優先順序、左右切換與折疊）。
+  - 多幣種與匯率：補外幣帳戶「設定期初均價」操作、計算規則、修改與清除。
+  - 帳戶與外觀（記帳偏好）：補「選擇帳戶時顯示主帳戶」設定與展開／收合行為。
+  - 信用卡紅利回饋：補帳戶頁自然月回饋分月列示、明細頁分月區塊與隱藏未生效／已結束規則。
+  - 農場每日帳務挑戰：補 App 最高優先權疊層、Android 返回鍵與 iOS 短暫覆蓋不中斷規則。
+  - 更新 `docs/changelog.md` 的 4.3.5 分類與教學連結，以及 `docusaurus.config.ts` 頁尾版本為 App 4.3.5。
+- 補入 14 張 4.3.5 示範圖片（皆以 App 最新 4.3.5 正式 Flutter 頁面與元件配合隔離記憶體 Drift DB 與虛構資料渲染，1206px 寬／無 OS 狀態列，**非實機或模擬器實拍**；來源腳本為 `/Users/andy/BeeCount-manual-tools/sim/manual435/capture_test.dart`，暫放 App `test/` 執行完已刪除，App repo 維持乾淨）：
+  - `record/ai-free-tier.png`、`record/ai-provider-thinking.png`、`record/ai-chat-thinking.png`、`record/ai-chat-provider-switch.png`、`preface/ai-onboarding.png`
+  - `analysis/home-smart-cards-1.png`、`analysis/home-smart-cards-2.png`、`analysis/home-smart-cards-collapsed.png`
+  - `prepare/currency-fx-opening-1.png`、`prepare/currency-fx-opening-2.png`、`prepare/account-picker-groups-1.png`
+  - `more/appearance-entry-groups.png`、`credit-card/rewards-month-rows.png`、`credit-card/rewards-month-sections.png`
+- 已於 2026-11-26 建置並部署至 Cloudflare Pages 專案 `tallycheck-manual` 的 `main`，正式網址 `https://tallycheck-manual.pages.dev`，本次部署網址 `https://991c437f.tallycheck-manual.pages.dev`；已提交本機 commit，未 push。
